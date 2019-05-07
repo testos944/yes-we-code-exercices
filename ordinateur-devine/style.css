@@ -1,0 +1,16 @@
+/* Change les valeurs de styles pour écraser les styles existants */
+
+
+/* Essaie de retirer les commentaires du bloc qui suit et voir ce qui va se passer! */
+
+/* body {
+  color:red;
+} */
+
+h1 {
+  text-align: center;
+}
+
+.ma-super-table {
+  max-height: none !important;
+}

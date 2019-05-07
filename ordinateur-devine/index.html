@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello, world</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="helpers.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>C'est quoi ton nombre?</h1>
+
+        <p>Cette fois, c'est à l'utilisateur de penser à un nombre !</p>
+        <p>L'exercice que tu dois faire: développer un algorithme pour que l'ordinateur trouve ton nombre en un minmum
+            de coups.</p>
+        <input id="number-input" type="number" min="0" max="99" />
+        <!-- Déclenche l'appelle de la fonction 'comparer' du fichier "script.js" -->
+        <button onclick="comparer()">Envoyer</button>
+        <p>Clique sur "Envoyer" tu veux signaler à l'ordinateur que tu as pensé à ton nombre.</p>
+        <table id="history-container" class="ma-super-table">
+            <caption>Historique</caption>
+            <thead>
+                <tr>
+                    <th>Essai n°</th>
+                    <th>Nombre</th>
+                    <th>Résultat</th>
+                </tr>
+            </thead>
+            <tbody id="history">
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
