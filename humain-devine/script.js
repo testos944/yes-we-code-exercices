@@ -18,15 +18,23 @@ function comparer() {
     // tu n'as normalement pas besoin de changer autre chose que ce qui est contenu entre les lignes avec les étoiles!
     // ******************************************** //
 
+    if (nombreEssaisRestants <= 0) {
+        alert("Hmm, tu as perdu, tu as déjà atteint le nombre d'essai maximum !");
+        return;
+    }
 
+    let reussiOuPas = "";
+    if (nombreSaisiParLHumain == NOMBRE_GENERE_PAR_ORDINATEUR) {
+        reussiOuPas = `Tu as trouvé mon nombre en ${NOMBRE_ESSAIS_MAXIMUM - nombreEssaisRestants + 1} essais ! C'était ${NOMBRE_GENERE_PAR_ORDINATEUR}`;
+    }
+    else if (nombreSaisiParLHumain > NOMBRE_GENERE_PAR_ORDINATEUR) {
+        reussiOuPas = `Toujours pas ! Mon nombre est plus petit que ${nombreSaisiParLHumain}`;
+    }
+    else {
+        reussiOuPas = `Toujours pas ! Mon nombre est plus grand que ${nombreSaisiParLHumain}`;
+    }
 
-
-
-
-
-
-
-    let reussiOuPas = "Remplis moi avec quelquechose d'utile!";
+    nombreEssaisRestants = nombreEssaisRestants - 1;
     // ******************************************** //
 
     // on met à jour le nombre d'essai restant
