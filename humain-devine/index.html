@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello, world</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="helpers.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>C'est quoi ton nombre?</h1>
+
+        <p>Lorsque tu vas charger la page web dans ton navigateur préféré, l'ordinateur va "penser" à un nombre compris
+            entre 0 et 100.</p>
+        <p>Le but de l'exercice est de coder la fonction javascript qui permettra à un humain de comparer son résultat à
+            celui de l'ordinateur.</p>
+        <!-- Cet élément HTML "span" sera mis à jour grâce au script javascript, avec le bon nombre d'essai restant. -->
+        <p>Tu as <span id="id-essais"></span> essais pour trouver le bon nombre.</p>
+
+        <input id="number-input" type="number" min="0" />
+        <!-- Déclenche l'appelle de la fonction 'comparer' du fichier "script.js" -->
+        <button onclick="comparer()">Envoyer</button>
+        <p>Clique sur "Envoyer" lorsque tu veux comparer ton nombre avec celui généré par l'ordinateur.</p>
+        <table id="history-container">
+            <caption>Historique</caption>
+            <thead>
+                <tr>
+                    <th>Essai n°</th>
+                    <th>Nombre</th>
+                    <th>Résultat</th>
+                </tr>
+            </thead>
+            <tbody id="history">
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
