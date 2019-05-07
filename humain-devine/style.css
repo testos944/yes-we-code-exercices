@@ -10,3 +10,7 @@
 h1 {
   text-align: center;
 }
+
+.ma-super-table {
+  max-height: none !important;
+}
