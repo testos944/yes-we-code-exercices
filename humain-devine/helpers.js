@@ -34,7 +34,7 @@ function creerColonneAvecTexte(text) {
     return column;
 }
 
-// une fois que la page est chargée, cette fonction met àj our le nombre d'essai restants.
+// une fois que la page est chargée, cette fonction met à jour le nombre d'essai restants.
 document.addEventListener("DOMContentLoaded", function (event) {
     metAJourNombreDessaiRestant(nombreEssaisRestants);
 });
